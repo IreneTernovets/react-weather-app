@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from "./Search";
+import Temperature from "./Temperature";
+import City from "./City";
+import WeatherInfo from "./WeatherInfo";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Search />
+        <City city="New York" />
+        <WeatherInfo
+          day="Tuesday"
+          time="10:00"
+          sky="Cloudy"
+          img="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          humidity={80}
+          wind={10}
+        />
+        <Temperature celsius={19} />
+      </div>
     </div>
   );
 }
 
-export default App;
+
