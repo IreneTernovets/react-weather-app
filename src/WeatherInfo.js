@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="row">
           <div className="col">
-            <img src={props.img} />
+            <img src={props.img} alt={props.sky} />
           </div>
           <div className="col">
             <ul>
