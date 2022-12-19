@@ -20,6 +20,8 @@ export default function App() {
         />
         <Temperature celsius={19} />
       </div>
+
+      <a href='https://github.com/IreneTernovets/react-weather-app'>Open-sourced code on Git hub</a>
     </div>
   );
 }
